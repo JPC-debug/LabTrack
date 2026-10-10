@@ -1,0 +1,5 @@
+Training started on A100
+Epoch 1/8, Loss: 1.3526, LR: 0.001, Accuracy: 65%, Success Rate: 60%
+Epoch 2/8, Loss: 1.0128, LR: 0.001, Accuracy: 0.72, Success Rate: 0.68
+Epoch 3, loss=0.8526, learning rate=1e-4, accuracy=0.85, success rate=80%
+Epoch 4, loss=0.7128, lr=0.0001, acc=88%, success_rate=0.92

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "VLA baseline",
+    "model": "OpenVLA",
+    "dataset": "LIBERO",
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "epochs": 20,
+    "gpu": "NVIDIA A100",
+    "checkpoint_path": "checkpoints/VLA_baseline/best.pt",
+    "train_command": "python train.py --config configs/experiment.yaml",
+    "eval_command": "python eval.py --checkpoint checkpoints/best.pt",
+    "success_rate": 72.5,
+    "notes": "示例数据，仅用于体验界面，不代表实际模型性能。"
+  },
+  {
+    "name": "VLA fine-tuned",
+    "model": "OpenVLA",
+    "dataset": "LIBERO",
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "epochs": 20,
+    "gpu": "NVIDIA A100",
+    "checkpoint_path": "checkpoints/VLA_fine-tuned/best.pt",
+    "train_command": "python train.py --config configs/experiment.yaml",
+    "eval_command": "python eval.py --checkpoint checkpoints/best.pt",
+    "success_rate": 85.2,
+    "notes": "示例数据，仅用于体验界面，不代表实际模型性能。"
+  },
+  {
+    "name": "Image classification",
+    "model": "ResNet50",
+    "dataset": "CIFAR-100",
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "epochs": 20,
+    "gpu": "NVIDIA A100",
+    "checkpoint_path": "checkpoints/Image_classification/best.pt",
+    "train_command": "python train.py --config configs/experiment.yaml",
+    "eval_command": "python eval.py --checkpoint checkpoints/best.pt",
+    "success_rate": null,
+    "notes": "示例数据，仅用于体验界面，不代表实际模型性能。"
+  }
+]

@@ -1,0 +1,2 @@
+name,model,dataset,status,tags,batch_size,learning_rate,epochs,gpu,checkpoint_path,train_command,eval_command,success_rate,notes
+VLA third-stage baseline,OpenVLA,LIBERO,planned,VLA|LIBERO|baseline,16,0.0001,50,2,checkpoints/vla.pt,python train.py --batch_size 16 --lr 0.0001 --gpu 2 --epochs=50 --fp16,python eval.py,,示例数据，仅用于体验 CSV 导入
