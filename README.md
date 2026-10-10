@@ -24,6 +24,30 @@ flowchart LR
 
 `app.py` 负责导航和统一异常提示；`ui.py` 负责展示与交互；校验、日志解析、命令解析、CSV 与报告各自独立；`ExperimentStore` 负责事务、查询、兼容迁移和关联关系。第四阶段沿用现有数据库格式，不增加新表或新列。
 
+## 📸 Screenshots
+
+The following screenshots demonstrate the main features of LabTrack.
+
+All experiments and metrics shown below are demonstration data.
+
+### 1. Dashboard
+
+Experiment overview, success rate statistics, and status visualization.
+
+![LabTrack Dashboard](docs/screenshots/dashboard.png)
+
+### 2. Training Metrics
+
+Training log parsing, metric summaries, and interactive loss visualization.
+
+![Training Metrics](docs/screenshots/metrics.png)
+
+### 3. Command Analysis
+
+Training command parsing and hyperparameter consistency checking.
+
+![Command Analysis](docs/screenshots/commands.png)
+
 ## 快速启动
 
 推荐 Python 3.10–3.12（兼容最低 3.9）。在项目根目录运行：
