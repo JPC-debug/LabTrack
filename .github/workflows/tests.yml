@@ -15,7 +15,7 @@ jobs:
       matrix:
         python-version: ['3.10', '3.12']
     env:
-      LABTRACK_DB: ${{ runner.temp }}/labtrack-ci.db
+      LABTRACK_DB: /tmp/labtrack-ci.db
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
